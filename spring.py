@@ -1,9 +1,14 @@
-import numpy as np
+import dataclasses as dc
 
+@dc.dataclass
 class Spring:
+    # Points indices
+    i: int  
+    j: int
+    
+    # Rest length
+    length: float
 
-    def __init__(self, points_list, length, normal_vec):
-
-        self._points_list = points_list
-        self._length = length
-        self._normal_vec = normal_vec
+    # Normal vector
+    nx: float
+    ny: float
