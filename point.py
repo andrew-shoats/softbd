@@ -3,13 +3,13 @@ import dataclasses as dc
 @dc.dataclass
 class Point:
     # Position
-    x: float  
-    y: float
+    x: float = 0
+    y: float = 0
     
     # Velocity
-    vx: float
-    vy: float
+    vx: float = 0
+    vy: float = 0
 
     # Force accumulator
-    fx: float 
-    fy: float
+    fx: float = 0
+    fy: float = 0

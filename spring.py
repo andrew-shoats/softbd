@@ -3,12 +3,12 @@ import dataclasses as dc
 @dc.dataclass
 class Spring:
     # Points indices
-    i: int  
-    j: int
+    i: int = 0
+    j: int = 0
     
     # Rest length
-    length: float
+    length: float = 0
 
     # Normal vector
-    nx: float
-    ny: float
+    nx: float = 0
+    ny: float = 0
